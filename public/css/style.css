@@ -1,0 +1,201 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-bolt {
+    color: brown;
+    font-size: 2rem;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a :hover {
+    text-decoration: underline;
+}
+
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.f-info-links,
+.f-info-socials {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    color: #222222;
+}
+
+.f-info-socials i {
+    margin-right: 1rem;
+}
+
+.f-company {
+    color: #222222;
+    margin-top: 0.4rem;
+}
+
+.card {
+    border: none !important;
+    margin-bottom: 2rem !important;
+    object-fit: cover !important;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text {
+    font-weight: 400 !important;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* this btn class have inbuilt css because of bootstrap installed therefore */
+
+.btn-sample{
+    background-color: brown !important;
+    border: none !important;
+}
+
+.show-img {
+    height: 50vh;
+    width: fit-content;
+}
+
+.btns {
+    display: grid;
+    grid-template-columns: 0.4fr 5fr;
+    gap: 150px;
+    /* Adjust the gap as needed */
+}
+
+#map {
+    height: 400px;
+    width: 100vh;
+}
+
+.btn-search {
+    background-color: brown;
+    color: white;
+    margin-right: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cont {
+    border: 0.2px solid black;
+    border-radius: 3rem;
+    width: fit-content; /* Adjust width to fit content */
+    height: fit-content; /* Adjust height to fit content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar{
+    border-radius: 3rem;
+    border: 0px;
+    color: black;
+    margin-left: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 30rem;
+}
+
+.btn-search{
+    opacity: 0.8;
+}
+
+.btn-search:hover {
+    background-color: brown;
+    opacity: 1;
+}
+#filters {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 900px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-top: 1rem;
+    /* hide scrollbar for Firefox */
+    -ms-overflow-style: none;
+    /* hide scrollbar for IE/Edge */
+  }
+
+  #filters::-webkit-scrollbar {
+    display: none;
+    /* hide scrollbar for Chrome, Safari, and Opera */
+  }
+
+  .filter {
+    text-align: center;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    opacity: 0.8;
+  }
+
+  .filter:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .filter p {
+    font-size: 0.9rem;
+  }
+
+  .container1 {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tax-info {
+    display: none;
+  }
+
+  .toggle {
+    border: 1px solid black;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    height: 3.5rem;
+    margin-right: 3rem;
+  }

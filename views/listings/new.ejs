@@ -1,0 +1,42 @@
+<% layout("/layouts/boilerplate.ejs") %>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <br><br>
+            <h3>Create a New Listing</h3>
+            <form method="POST" action="/listing" class="needs-validation" novalidate enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input name="title" class="form-control" type="text" placeholder="Enter title" required>
+                    <div class="valid-feedback">Title looks good.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea name="description" class="form-control" required></textarea>
+                    <div class="invalid-feedback">Please describe about the place.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="img" class="form-label">Image link</label>
+                    <input name="img" class="form-control" type="file" required>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label for="price" class="form-label">Price</label>
+                        <input name="price" class="form-control" placeholder="Enter price" required>
+                        <div class="invalid-feedback">Please enter a valid Price.</div>
+                    </div>
+                    <div class="mb-3 col-md-8">
+                        <label for="country" class="form-label">Country</label>
+                        <input name="country" class="form-control" type="text" placeholder="Enter Country name" required>
+                        <div class="invalid-feedback">Please enter a valid country name.</div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input name="location" class="form-control" type="text" placeholder="Enter Country Name" required>
+                    <div class="invalid-feedback">Please enter a valid Country Name.</div>
+                </div>
+                <button class="btn btn-outline-success" style="width: 100px; border-radius: 15px;">Add</button>
+                <br><br>
+            </form>
+        </div>
+    </div>
