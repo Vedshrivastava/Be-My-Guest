@@ -1,0 +1,26 @@
+if (process.env.NODE_ENV !== "production") {
+    require('dotenv').config();
+}
+//i needed to write extra code above and install version 1 of cloudinary as v2 of cloudinary was not compatible with multer-storage-cloudinary
+
+const cloudinary = require('cloudinary').v2;
+const { CloudinaryStorage } = require('multer-storage-cloudinary');
+
+cloudinary.config({
+    cloud_name: process.env.CLOUD_NAME,
+    api_key: process.env.CLOUD_API_KEY,
+    api_secret: process.env.CLOUD_API_SECRET
+})
+
+const storage = new CloudinaryStorage({
+    cloudinary: cloudinary,
+    params: {
+        folder: 'Hodophilers_DEV',
+        allowedFormat: ["png", "jpg", "jpeg"], // supports promises as well
+    },
+});
+
+module.exports = {
+    cloudinary,
+    storage,
+}
