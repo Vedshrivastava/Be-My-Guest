@@ -33,7 +33,7 @@ module.exports.logout = (req, res) => {
         }
         req.flash("success", "you are logged out now!");
         res.redirect("/listing")
-        // res.redirect(req.session.redirectUrl);
+        //--> res.redirect(req.session.redirectUrl); <--
         //this works if passport is not used as it deletes the redirectUrl from session as login succeeds.
         //therefore we need to make locals and middlewares for this.
     })
